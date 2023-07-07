@@ -39,7 +39,7 @@ Lista de topics <br>
 `bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092`. <br>
 Eliminar topic <br>
 `bin/windows/kafka-topics.bat --delete --bootstrap-server localhost:9092 --topic nombre_del_tema`. <br>
-Ver describción del topic
+Ver describción del topic<br>
 `bin/windows/kafka-topics.bat --describe --bootstrap-server localhost:9092 --topic nombre_del_tema`.
 
 
