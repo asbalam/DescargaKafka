@@ -25,7 +25,7 @@ Descomprime el archivo descargado y mueve la carpeta resultante a la ubicación 
 ## Crear un Topic y probar la transmisión de datos
 
 1. En la ventana de comandos del servidor Kafka, ejecuta el siguiente comando para crear un nuevo Topic llamado "test": <br>
-`bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partition 1 --topic test`.
+`bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test`.
 
 2. En la ventana de comandos del productor, ejecuta el siguiente comando para comenzar a producir mensajes en el Topic "test": <br>
 `bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic test`.
