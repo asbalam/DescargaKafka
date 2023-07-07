@@ -36,6 +36,8 @@ Descomprime el archivo descargado y mueve la carpeta resultante a la ubicación 
 4. Prueba enviando mensajes desde el productor y verifica que se reflejen en la ventana del consumidor. <br>
 
 Lista de topics <br>
-`bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092`.
+`bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092`. <br>
+Eliminar topic <br>
+`bin/windows/kafka-topics.bat --delete --bootstrap-server localhost:9092 --topic nombre_del_tema`
 
 En resumen, Apache Kafka es una potente plataforma de mensajería y transmisión de eventos que permite el procesamiento en tiempo real de flujos de datos. Con su modelo de publicación-suscripción y su capacidad para gestionar flujos masivos de datos, Kafka es una herramienta versátil utilizada en diversos sectores para la transmisión de eventos en tiempo real, integración de sistemas y arquitecturas basadas en eventos.
