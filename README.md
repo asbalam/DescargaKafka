@@ -53,3 +53,8 @@ Ver describción del topic<br>
 
 
 En resumen, Apache Kafka es una potente plataforma de mensajería y transmisión de eventos que permite el procesamiento en tiempo real de flujos de datos. Con su modelo de publicación-suscripción y su capacidad para gestionar flujos masivos de datos, Kafka es una herramienta versátil utilizada en diversos sectores para la transmisión de eventos en tiempo real, integración de sistemas y arquitecturas basadas en eventos.
+
+`bin/windows/kafka-topics.bat --describe --bootstrap-server localhost:9092 --topic nombre_del_tema`.
+
+
+En resumen, Apache Kafka es una potente plataforma de mensajería y transmisión de eventos que permite el procesamiento en tiempo real de flujos de datos. Con su modelo de publicación-suscripción y su capacidad para gestionar flujos masivos de datos, Kafka es una herramienta versátil utilizada en diversos sectores para la transmisión de eventos en tiempo real, integración de sistemas y arquitecturas basadas en eventos.
