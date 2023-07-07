@@ -35,6 +35,15 @@ Descomprime el archivo descargado y mueve la carpeta resultante a la ubicación 
 
 4. Prueba enviando mensajes desde el productor y verifica que se reflejen en la ventana del consumidor. <br>
 
+5. Para ver clave de mensaje en el emisor <br>
+`bin/windows/kafka-console-consumer.bat --topic test --bootstrap-server localhost:9092 --property print.key=true`
+
+6. Para agregar clave al mensaje en el productor  <br>
+`bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic test --property "parse.key=true" --property "key.separator=:"` <br>
+Ejemplo de mensaje a enviar
+`este es mi clave: este es mi mensaje`
+
+#Lista de mas comandos
 Lista de topics <br>
 `bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092`. <br>
 Eliminar topic <br>
