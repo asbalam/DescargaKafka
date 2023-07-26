@@ -55,7 +55,7 @@ broker.id=1
 listeners=PLAINTEXT://localhost:9093
 advertised.listeners=PLAINTEXT://localhost:9093
 
-Ejecutar servidor de kafka `.\bin\windows\kafka-server-start.bat .\config\server.properties`
+Ejecutar servidor de kafka `.\bin\windows\kafka-server-start.bat .\config\server1.properties`
 
 Creacion de topics con mas de una replica
 bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 2 --partitions 8 --topic testX2
