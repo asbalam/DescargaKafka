@@ -43,7 +43,7 @@ Descomprime el archivo descargado y mueve la carpeta resultante a la ubicación 
 Ejemplo de mensaje a enviar
 `este es mi clave: este es mi mensaje`
 
-##Kafka con 2 brokers
+## Kafka con 2 brokers
 Creacion de otro servidor
 Copiar `server.properties`
 
@@ -64,7 +64,7 @@ Revisar las propiedades de una replica
 bin/windows/kafka-topics.bat --describe --bootstrap-server localhost:9092 --topic testX2
 
 
-##Lista de mas comandos
+## Lista de mas comandos
 Lista de topics <br>
 `bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092`. <br>
 Eliminar topic <br>
