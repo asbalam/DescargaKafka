@@ -43,7 +43,28 @@ Descomprime el archivo descargado y mueve la carpeta resultante a la ubicación 
 Ejemplo de mensaje a enviar
 `este es mi clave: este es mi mensaje`
 
-#Lista de mas comandos
+##Kafka con 2 brokers
+Creacion de otro servidor
+Copiar `server.properties`
+
+Ejemplo de copiado
+`cp server.properties server1.properties`
+
+Modificar parametro basicos, por ejemplo
+broker.id=1
+listeners=PLAINTEXT://localhost:9093
+advertised.listeners=PLAINTEXT://localhost:9093
+
+Ejecutar servidor de kafka `.\bin\windows\kafka-server-start.bat .\config\server.properties`
+
+Creacion de topics con mas de una replica
+bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 2 --partitions 8 --topic testX2
+
+Revisar las propiedades de una replica
+bin/windows/kafka-topics.bat --describe --bootstrap-server localhost:9092 --topic testX2
+
+
+##Lista de mas comandos
 Lista de topics <br>
 `bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092`. <br>
 Eliminar topic <br>
